@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>André Muniz · Software Engineer | Java, Spring Boot & GIS</title>
+  <meta name="description" content="Portfólio de André Muniz — Engenheiro de Software Full-Stack (Java, Spring Boot, Angular) com foco em sistemas geoespaciais (PostGIS, ArcGIS).">
+  <meta property="og:title" content="André Muniz · Software Engineer">
+  <meta property="og:description" content="Java · Spring Boot · Angular · PostGIS/ArcGIS · Cloud">
+  <meta property="og:image" content="https://engenheiromuniz.github.io/assets/capa-1200.jpg">
+  <link rel="preload" as="image" href="assets/foto.jpg">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%230b1a2e'/><text x='50%25' y='56%25' font-family='Arial' font-weight='700' font-size='28' fill='%2334d399' text-anchor='middle' dominant-baseline='middle'>AM</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="container nav-inner">
+    <a href="#topo" class="logo"><span class="mono">&lt;</span>André Muniz<span class="mono">/&gt;</span></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#sobre" data-i18n="nav.about">Sobre</a>
+      <a href="#stack" data-i18n="nav.stack">Stack</a>
+      <a href="#projetos" data-i18n="nav.projects">Projetos</a>
+      <a href="#experiencia" data-i18n="nav.exp">Experiência</a>
+      <a href="#contato" data-i18n="nav.contact">Contato</a>
+    </nav>
+    <div class="nav-actions">
+      <div class="langs" role="group" aria-label="Idioma / Language">
+        <button class="flag" data-lang="pt" title="Português" aria-label="Português">
+          <svg viewBox="0 0 28 20" aria-hidden="true"><rect width="28" height="20" fill="#009c3b"/><path d="M14 2.2 25.6 10 14 17.8 2.4 10z" fill="#ffdf00"/><circle cx="14" cy="10" r="4.6" fill="#002776"/><path d="M9.5 9.2c3-.9 6.4-.5 9 .9" stroke="#fff" stroke-width=".9" fill="none"/></svg>
+          <span>PT</span>
+        </button>
+        <button class="flag" data-lang="en" title="English" aria-label="English">
+          <svg viewBox="0 0 28 20" aria-hidden="true"><rect width="28" height="20" fill="#b22234"/><g fill="#fff"><rect y="1.54" width="28" height="1.54"/><rect y="4.62" width="28" height="1.54"/><rect y="7.7" width="28" height="1.54"/><rect y="10.78" width="28" height="1.54"/><rect y="13.86" width="28" height="1.54"/><rect y="16.94" width="28" height="1.54"/></g><rect width="12" height="10.78" fill="#3c3b6e"/><g fill="#fff"><circle cx="2" cy="2" r=".55"/><circle cx="5" cy="2" r=".55"/><circle cx="8" cy="2" r=".55"/><circle cx="11" cy="2" r=".55"/><circle cx="3.5" cy="4" r=".55"/><circle cx="6.5" cy="4" r=".55"/><circle cx="9.5" cy="4" r=".55"/><circle cx="2" cy="6" r=".55"/><circle cx="5" cy="6" r=".55"/><circle cx="8" cy="6" r=".55"/><circle cx="11" cy="6" r=".55"/><circle cx="3.5" cy="8" r=".55"/><circle cx="6.5" cy="8" r=".55"/><circle cx="9.5" cy="8" r=".55"/></g></svg>
+          <span>EN</span>
+        </button>
+      </div>
+      <button class="menu" id="menuBtn" aria-label="Menu">☰</button>
+    </div>
+  </div>
+</header>
+
+<main id="topo">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="banner">
+      <img src="assets/capa.jpg" alt="Java, Spring Boot, Python e GIS — ArcGIS, QGIS, PostGIS, Full-Stack Geospatial" width="2064" height="512">
+    </div>
+    <div class="container hero-body">
+      <img class="avatar" src="assets/foto.jpg" alt="Foto de André Muniz" width="400" height="400">
+      <div class="hero-text">
+        <p class="kicker mono" data-i18n="hero.kicker">// Olá, eu sou</p>
+        <h1>André Muniz</h1>
+        <p class="headline">Software Engineer · Full-Stack Java, Spring Boot &amp; Angular · Microservices · Geoprocessing (PostGIS/ArcGIS) · Cloud</p>
+        <p class="meta">📍 Brasília, DF · <span data-i18n="hero.meta">20 anos em TI · Aberto a vagas remotas</span></p>
+        <div class="cta">
+          <a class="btn primary" href="#projetos" data-i18n="hero.cta1">Ver projetos</a>
+          <a class="btn" href="https://www.linkedin.com/in/engenheiro-muniz/" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn" href="https://github.com/engenheiromuniz" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section id="sobre" class="section">
+    <div class="container two-col">
+      <div>
+        <h2 class="title"><span class="mono">01.</span> <span data-i18n="about.title">Sobre mim</span></h2>
+        <div data-i18n-html="about.body">
+          <p>Engenheiro de Software Full-Stack, bacharel em Engenharia da Computação, com <strong>20 anos em TI</strong>. Desenvolvo software desde 2006 e, desde 2021, tenho foco em <strong>Java e Angular</strong>.</p>
+          <p>Na Secretaria do Meio Ambiente do Distrito Federal (SEMA-DF), projeto e mantenho módulos centrais do <strong>SISDIA</strong>, plataforma de informações ambientais usada mensalmente por milhares de pesquisadores e órgãos públicos. Trabalho com Java (Spring Boot), APIs RESTful, PostgreSQL/PostGIS e ArcGIS Enterprise.</p>
+          <p>Antes de me dedicar à engenharia de software, liderei a infraestrutura do data center do Governo do Distrito Federal (SCADA, DCIM Schneider, energia e climatização). Essa experiência me dá uma visão prática de <strong>segurança, disponibilidade e operação</strong>, que aplico em cada sistema que construo.</p>
+        </div>
+      </div>
+      <ul class="facts">
+        <li><span class="num">20+</span><span data-i18n="facts.1">anos em TI</span></li>
+        <li><span class="num">2006</span><span data-i18n="facts.2">desenvolvendo software</span></li>
+        <li><span class="num">40+</span><span data-i18n="facts.3">repositórios no GitHub</span></li>
+        <li><span class="num">GIS</span><span data-i18n="facts.4">PostGIS · ArcGIS Enterprise · IDE/DF</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- STACK -->
+  <section id="stack" class="section alt">
+    <div class="container">
+      <h2 class="title"><span class="mono">02.</span> Stack</h2>
+      <div class="stack-grid">
+        <div class="stack-card"><h3>Back-end</h3><p>Java 21 · Spring Boot · Spring Data JPA · Spring Security · OpenFeign · Node.js (NestJS) · PHP (Laravel) · Python</p></div>
+        <div class="stack-card"><h3>Front-end</h3><p>Angular · TypeScript · JavaScript · HTML5 · CSS · PWA</p></div>
+        <div class="stack-card"><h3 data-i18n="stack.data">Dados &amp; Mensageria</h3><p>PostgreSQL / PostGIS · Oracle · SQL Server · MySQL · H2 · Kafka · RabbitMQ</p></div>
+        <div class="stack-card"><h3>Geo</h3><p>ArcGIS Enterprise · ArcGIS REST / SDK · StoryMaps · Survey123 · QGIS · SIRGAS 2000</p></div>
+        <div class="stack-card"><h3>DevOps &amp; Cloud</h3><p>Docker · Kubernetes · OpenShift (OKD) · Azure · AWS · Git · CI/CD · Zabbix · Grafana</p></div>
+        <div class="stack-card"><h3 data-i18n="stack.practices">Práticas</h3><p data-i18n="stack.practicesBody">Microsserviços · APIs REST · Design Patterns (GoF) · SOLID · TDD · LGPD / Privacy by Design · Scrum</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJETOS -->
+  <section id="projetos" class="section">
+    <div class="container">
+      <h2 class="title"><span class="mono">03.</span> <span data-i18n="proj.title">Projetos em destaque</span></h2>
+      <div class="filters" id="filters">
+        <button class="chip active" data-f="all" data-i18n="proj.all">Todos</button>
+        <button class="chip" data-f="geo">GIS</button>
+        <button class="chip" data-f="java">Java</button>
+        <button class="chip" data-f="ts">TypeScript</button>
+      </div>
+      <div class="featured-list" id="featured"></div>
+      <div class="cards" id="cards"></div>
+      <p class="more"><a href="https://github.com/engenheiromuniz?tab=repositories" target="_blank" rel="noopener" data-i18n="proj.more">Ver todos os repositórios no GitHub →</a></p>
+    </div>
+  </section>
+
+  <!-- EXPERIÊNCIA -->
+  <section id="experiencia" class="section alt">
+    <div class="container">
+      <h2 class="title"><span class="mono">04.</span> <span data-i18n="exp.title">Experiência</span></h2>
+      <ol class="timeline" id="timeline"></ol>
+
+      <h3 class="subtitle" data-i18n="edu.title">Formação</h3>
+      <div class="edu">
+        <div class="edu-item"><strong data-i18n="edu.1t">Bacharelado em Engenharia da Computação</strong><span>UniCEUB · 2001 – 2006</span></div>
+        <div class="edu-item"><strong data-i18n="edu.2t">Especialização em Desenvolvimento de Sistemas Web</strong><span>Anhanguera Educacional · 2012 – 2013</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section id="contato" class="section contact">
+    <div class="container">
+      <h2 class="title"><span class="mono">05.</span> <span data-i18n="contact.title">Vamos conversar?</span></h2>
+      <p class="lead" data-i18n="contact.body">Aberto a vagas remotas de Java / Full-Stack no Brasil e no exterior, especialmente EUA, Canadá e Alemanha.</p>
+      <div class="cta center">
+        <a class="btn primary" href="mailto:engenheiro.muniz@outlook.com">engenheiro.muniz@outlook.com</a>
+        <a class="btn" href="https://www.linkedin.com/in/engenheiro-muniz/" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn" href="https://github.com/engenheiromuniz" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container"><span class="mono">© <span id="ano"></span> André Muniz</span> · <span data-i18n="footer">Feito com HTML, CSS e JavaScript · hospedado no GitHub Pages</span></div>
+</footer>
+
+<div class="lightbox" id="lightbox" hidden>
+  <button class="lb-close" id="lbClose" aria-label="Fechar">✕</button>
+  <button class="lb-nav prev" id="lbPrev" aria-label="Anterior">‹</button>
+  <figure><img id="lbImg" alt=""><figcaption id="lbCap"></figcaption></figure>
+  <button class="lb-nav next" id="lbNext" aria-label="Próxima">›</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
